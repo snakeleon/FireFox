@@ -56,3 +56,7 @@ webappsstore.sqlite
 webappsstore.sqlite-shm
 webappsstore.sqlite-wal
 xulstore.json
+.parentlock
+notificationstore.json
+serviceworker.txt
+sessionstore.js
