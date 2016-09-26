@@ -49,6 +49,7 @@ sessionstore-backups
 signedInUser.json
 SiteSecurityServiceState.txt
 storage
+storage.sqlite
 times.json
 weave
 webapps
