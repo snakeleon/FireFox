@@ -1,8 +1,10 @@
 adblockplus
+AlternateServices.txt
 addon-notification
 AddonInstaller
 addons.json
 autoproxy
+browser-extension-data/
 blocklist.xml
 blocklist-addons.json
 blocklist-gfx.json
@@ -21,6 +23,7 @@ enumerate_devices.txt
 extensions
 extensions.ini
 extensions.json
+experiments.json
 features
 fftmp
 formhistory.sqlite
@@ -49,6 +52,7 @@ revocations.txt
 saved-telemetry-pings
 search.json.mozlz4
 session.rdf
+serviceworker.txt
 sessionbackups
 secmod.db
 sessionCheckpoints.json
@@ -58,6 +62,7 @@ signedInUser.json
 SiteSecurityServiceState.txt
 storage
 storage.sqlite
+Telemetry.ShutdownTime.txt
 times.json
 weave
 webapps
@@ -66,5 +71,3 @@ webappsstore.sqlite-shm
 webappsstore.sqlite-wal
 xulstore.json
 .parentlock
-notificationstore.json
-serviceworker.txt
