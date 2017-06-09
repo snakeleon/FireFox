@@ -34,6 +34,7 @@ gmp-gmpopenh264
 gmp-widevinecdm
 gm_scripts
 key3.db
+jetpack
 kinto.sqlite
 localstore.rdf
 logins.json
@@ -56,6 +57,7 @@ session.rdf
 serviceworker.txt
 sessionbackups
 secmod.db
+SecurityPreloadState.txt
 sessionCheckpoints.json
 sessionstore-backups
 sessionstore.js
@@ -63,6 +65,7 @@ signedInUser.json
 SiteSecurityServiceState.txt
 storage
 storage.sqlite
+storage-sync.sqlite
 Telemetry.ShutdownTime.txt
 times.json
 weave
