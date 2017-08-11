@@ -3,6 +3,7 @@ AlternateServices.txt
 addon-notification
 AddonInstaller
 addons.json
+addonStartup.json.lz4
 autoproxy
 browser-extension-data/
 blocklist.xml
@@ -17,6 +18,7 @@ content-prefs.sqlite
 cookies.sqlite
 cookies.sqlite-shm
 cookies.sqlite-wal
+cookies.sqlite.bak-rebuild
 crashes
 datareporting
 enumerate_devices.txt
@@ -24,6 +26,7 @@ extensions
 extensions.ini
 extensions.json
 experiments.json
+favicons.sqlite
 features
 fftmp
 formhistory.sqlite
@@ -33,6 +36,7 @@ gmp-eme-adobe
 gmp-gmpopenh264
 gmp-widevinecdm
 gm_scripts
+handlers.json
 key3.db
 jetpack
 kinto.sqlite
