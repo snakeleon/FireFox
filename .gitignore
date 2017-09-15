@@ -28,6 +28,8 @@ extensions.json
 experiments.json
 favicons.sqlite
 features
+favicons.sqlite-shm
+favicons.sqlite-wal
 fftmp
 formhistory.sqlite
 foxyproxy.xml
