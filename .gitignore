@@ -6,6 +6,7 @@ addons.json
 addonStartup.json.lz4
 autoproxy
 browser-extension-data/
+blocklists/
 blocklist.xml
 blocklist-addons.json
 blocklist-gfx.json
