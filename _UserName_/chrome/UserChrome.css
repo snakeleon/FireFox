@@ -1,16 +1,18 @@
 /*改变火狐外观*/
 
-/*屏蔽Alt切换菜单*/
+/*————————屏蔽Alt切换菜单————————*/
 #toolbar-menubar[autohide="true"] {
     display:none !important;
 }
 
-/*一直显示alltabs-button*/
+
+/*————————一直显示alltabs-button————————*/
 #alltabs-button {
     visibility: visible !important;
 }
 
-/*弹出菜单显示标签页序号*/
+
+/*————————弹出菜单显示标签页序号————————*/
 #main-window > #tab-view-deck > #browser-panel #alltabs-button > #alltabs-popup {
     counter-reset: latabs !important;
 }
@@ -25,6 +27,7 @@
     margin-left:10px !important;
 }
 
+
 /*————————查找栏置顶——————————*/
 .browserContainer > findbar, .findbar-closebutton.close-icon {
     -moz-box-ordinal-group: 0 !important;
@@ -36,7 +39,8 @@
     border-bottom: 1px solid #C1C1C1 !important;
 }
 
-/*-------RSS自动隐藏------*/
+
+/*—————————RSS自动隐藏—————————*/
 #feed-button {
     visibility: collapse !important;
 }
@@ -44,7 +48,8 @@
     visibility: visible !important;
 }
 
-/*右键精简*/
+
+/*—————————右键精简—————————*/
 /*#context-openlinkintab,*/
 #context-openlinkinusercontext-menu, #context-openlink, #context-openlinkprivate, #context-sep-open, #context-bookmarklink, #context-savepage, #context-sep-sendpagetodevice, #context-sendpagetodevice, #context-sendpagetodevice-popup, #context-sep-sendlinktodevice, #context-sendlinktodevice, #context-sendlinktodevice-popup, #context-sep-viewbgimage, #context-sendimage, #context-setDesktopBackground, #context_sendTabToDevice_separator, #context_sendTabToDevice, #context_sendTabToDevicePopupMenu, #context-keywordfield, #appMenuViewHistorySidebar {
     display:none !important;
@@ -53,41 +58,72 @@
     display:none !important;
 }
 
+
 /*—————————书签栏自动隐藏—————————*/
-#PersonalToolbar {
-    width: 100% !important;
-    visibility: hidden !important;
-    position: fixed !important;
-    opacity: 0;
-    transition: .2s !important;
-}
-#navigator-toolbox:hover > #PersonalToolbar {
-    visibility: visible !important;
-    opacity: 1;
-    transition: .3s !important;
-    box-shadow:0 2px 6px 0 rgba(0, 0, 0, .6);
-    background: #F9F9FA !important;
-}
+/*#PersonalToolbar {*/
+    /*width: 100% !important;*/
+    /*visibility: hidden !important;*/
+    /*position: fixed !important;*/
+    /*opacity: 0;*/
+    /*transition: .2s !important;*/
+/*}*/
+/*#navigator-toolbox:hover > #PersonalToolbar {*/
+    /*visibility: visible !important;*/
+    /*opacity: 1;*/
+    /*transition: .3s !important;*/
+    /*box-shadow:0 2px 6px 0 rgba(0, 0, 0, .6);*/
+    /*background: #F9F9FA !important;*/
+/*}*/
+
 /*.bookmark-item[container] {*/
 /*list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPklEQVR4AWOgGnhzwvM/MfjD+bCbOA34/3wyQQxSN7INGDXg08U4sAFvT3jvJscAkGY4PUgNIIy9EGFALQAADp4ODOUxtpoAAAAASUVORK5CYII=")!important;*/
 /*}*/
 
-/*自动隐藏导航栏*/
-#main-window[sizemode="normal"] #browser {
-    margin-top: -34px !important;
-}
-#main-window[sizemode="normal"] #nav-bar {
-    transition: .2s !important;
-    overflow: hidden !important;
-    max-height: 0 !important;
-    min-height: 0 !important;
-}
-#main-window[sizemode="normal"] :hover > #nav-bar {
-    transition: .3s !important;
-    max-height: 36px !important;
-}
 
-/*隐藏顶部蓝条*/
+/*—————————书签栏自动隐藏—————————*/
+#PersonalToolbar {
+  -moz-transform: perspective(1000px) rotateX(90deg);
+  -moz-transform-origin: top !important;
+  -moz-transition-timing-function: ease-in;
+  -moz-transition-duration: 0.1s, 0.1s;
+  -moz-transition-property: margin, -moz-transform;
+  -moz-transition-delay: 0.3s}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+  -moz-transform: rotateX(0deg);
+  -moz-transition-duration: 0.1s, 0.1s;
+  -moz-transition-delay: 0s}
+
+#PersonalToolbar {
+  visibility: visible !important;
+  position: fixed !important;
+  margin-top: 0px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width:100% !important;
+  box-shadow: 0px 3px 3px -3px #999 !important}
+
+#main-window[stylish-url="about:addons"] #PersonalToolbar, #main-window[stylish-url="about:permissions"] #PersonalToolbar, #main-window[stylish-url="about:preferences"] #PersonalToolbar, #main-window[stylish-url="about:sync-progress"] #PersonalToolbar, #main-window[stylish-url="about:downloads"] #PersonalToolbar {
+  display: none !important}
+
+
+/*—————————自动隐藏导航栏—————————*/
+/*#main-window[sizemode="normal"] #browser {*/
+    /*margin-top: -34px !important;*/
+/*}*/
+/*#main-window[sizemode="normal"] #nav-bar {*/
+    /*transition: .2s !important;*/
+    /*overflow: hidden !important;*/
+    /*max-height: 0 !important;*/
+    /*min-height: 0 !important;*/
+/*}*/
+/*#main-window[sizemode="normal"] :hover > #nav-bar {*/
+    /*transition: .3s !important;*/
+    /*max-height: 36px !important;*/
+/*}*/
+
+
+/*—————————隐藏顶部蓝条—————————*/
 #nav-bar {
     border-top-left-radius: 0px!important;
     border-top-right-radius: 0px!important;
